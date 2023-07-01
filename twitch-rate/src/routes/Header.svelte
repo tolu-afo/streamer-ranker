@@ -1,23 +1,9 @@
 <script lang="ts">
 	import { page } from '$app/stores';
 	import { modalStore, type ModalSettings } from '@skeletonlabs/skeleton';
+	import { customModal } from '../components/modal/modal';
 
 	let homeIconPath = 'images/monke.png';
-	
-	const modal: ModalSettings = {
-	type: 'prompt',
-	// Data
-	title: 'Enter Name',
-	body: 'Provide your first name in the field below.',
-	// Populates the input value and attributes
-	value: 'Skeleton',
-	valueAttr: { type: 'text', minlength: 3, maxlength: 10, required: true },
-	// Returns the updated response value
-	response: (r: string) => console.log('response:', r),
-	
-};
-
-
 </script>
 
 <header class="flex justify-between px-[3.125rem] p-2 text-white bg-[#5C17C5]">
@@ -45,9 +31,10 @@
 	</nav>
 	<div class="flex p-2">
 		<!-- TODO: have this trigger a login modal -->
-		<button class="flex gap-2" on:click={() => modalStore.trigger(modal)}>
+		<button class="flex gap-2" on:click={() => modalStore.trigger(customModal)}>
 			<svg xmlns="http://www.w3.org/2000/svg" height="1.5rem" viewBox="0 0 512 512"
 				><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+				<!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
 				<!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
 				<style>
 					svg {
