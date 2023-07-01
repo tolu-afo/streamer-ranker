@@ -8,5 +8,5 @@ export const customModal: ModalSettings = {
     body: 'Provide your username and password in the fields below.',
     value: 'jsmith',
     valueAttr: { type: 'text', minlength: 3, maxlength: 10, required: true},
-    response: (r: string) => alert("Alerting")
+    response: (r: string) => console.log(r)
 };
