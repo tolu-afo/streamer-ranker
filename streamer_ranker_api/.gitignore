@@ -1,0 +1,4 @@
+.env
+venv/
+*.sqlite3
+streamer_ranker_api/__pycache__/*
