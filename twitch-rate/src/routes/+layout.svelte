@@ -1,30 +1,7 @@
-<script>
-
-	// Your selected Skeleton theme:
-	import '@skeletonlabs/skeleton/themes/theme-skeleton.css';
-
-	// This contains the bulk of Skeletons required styles:
-	import '@skeletonlabs/skeleton/styles/skeleton.css';
-						
+<script>				
 	import Header from './Header.svelte';
 	import './styles.css';
 	import '../app.css';
-
-	const modal = {
-		type: 'confirm',
-		title: 'Are you sure?',
-		body: 'This is a modal dialog.',
-	};
-
-	const handleOpen = () => {
-		modalStore(modal).trigger();
-	};
-
-	const handleClose = () => {
-		modalStore(modal).trigger();
-	}
-
-
 </script>
 
 <div class="app">
