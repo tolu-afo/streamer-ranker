@@ -66,7 +66,7 @@
 					>Lost password?</a
 				>
 			</div>
-			<Button type="submit" class="w-full1 bg-purple-800">Login to your account</Button>
+			<Button type="submit" class="w-full bg-[#5C17C5] hover:bg-[#5C17C5] hover:brightness-125">Login to your account</Button>
 			<div class="text-sm font-medium text-gray-500 dark:text-gray-300 text-center">
 				Not registered? <a
 					href="/"
@@ -99,7 +99,7 @@
 				<Input type="password" name="password" placeholder="•••••" required />
 			</Label>
 
-			<Button type="submit" class="w-full1 bg-purple-800">Sign up</Button>
+			<Button type="submit" class="w-full1 bg-[#5C17C5] hover:bg-[#5C17C5] hover:brightness-125">Sign up</Button>
 			<div class="text-sm font-medium text-gray-500 dark:text-gray-300 text-center">
 				Have an Account? <a
 					href="/"
