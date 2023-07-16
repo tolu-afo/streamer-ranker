@@ -41,6 +41,9 @@ INSTALLED_APPS = [
     # added
     'rest_framework',
     'drf_spectacular',
+
+    # our apps
+    'users',
 ]
 
 REST_FRAMEWORK = {
