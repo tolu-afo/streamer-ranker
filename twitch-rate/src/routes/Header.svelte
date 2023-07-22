@@ -1,6 +1,6 @@
 <script>
 	import { page } from '$app/stores';
-	import {Button, Modal, Label, Input, Checkbox } from 'flowbite-svelte';
+	import { Button, Modal, Label, Input, Checkbox } from 'flowbite-svelte';
 
 	let homeIconPath = 'images/monke.png';
 
