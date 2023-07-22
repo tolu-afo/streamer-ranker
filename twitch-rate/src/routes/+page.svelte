@@ -1,5 +1,5 @@
 <script>
-	import { Button } from 'flowbite-svelte';
+	import { Button, Card } from 'flowbite-svelte';
 	const bannerImg = "images/banner_img_1.jpg";
 </script>
 
@@ -16,6 +16,29 @@
 				<Button class="p-2 w-24 min-w-max bg-[#5C17C5] hover:bg-[#5C17C5] hover:brightness-125">Get Started</Button>
 			</div>
 		</div>
+</section>
+<section class="explanation-section flex flex-col mx-auto p-12">
+	<div class="flex flex-col mx-auto gap-8 sm:flex-row">
+		<Card img="/images/rate_graphic.jpg">
+			<h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Rate</h5>
+			<p class="font-normal text-gray-700 dark:text-gray-400 leading-tight">
+			  Rate your favorite streamers, to boost their discoverability!
+			</p>
+		</Card>
+		<Card img="/images/vote_graphic.jpg">
+			<h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Vote</h5>
+			<p class="font-normal text-gray-700 dark:text-gray-400 leading-tight">
+			  Vote on the ratings of others to increase their Rating Trust!
+			</p>
+		</Card>
+		<Card img="/images/discover_graphic.jpg">
+			<h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Discover</h5>
+			<p class="font-normal text-gray-700 dark:text-gray-400 leading-tight">
+			  Discover new Streamers that are reccommended to you best on your previous ratings!
+			</p>
+		</Card>
+	</div>
+	<Button color="purple" class="mx-auto button">Get Ranking!</Button>
 </section>
 
 <style>
