@@ -69,6 +69,7 @@
 	</div>
 </section>
 
+
 <section id="email-section" class="flex flex-col text-center bg-gray-300 py-8">
 	<h1 class="text-5xl font-bold">Keep In Touch!</h1>
 	<p>Enter your email, to know when we enter into beta.</p>
