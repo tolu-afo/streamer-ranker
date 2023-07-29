@@ -1,5 +1,5 @@
 <script>
-	import { Button, Card, Label, Input } from 'flowbite-svelte';
+	import { Button, Card, Label, Input, Accordion, AccordionItem } from 'flowbite-svelte';
 	const bannerImg = "images/banner_img_1.jpg";
 </script>
 
@@ -16,6 +16,26 @@
 				<Button class="p-2 w-24 min-w-max bg-[#5C17C5] hover:bg-[#5C17C5] hover:brightness-125">Get Started</Button>
 			</div>
 		</div>
+</section>
+<section id="intro-section" class="px-24 pt-12">
+	<div class="pl-36">
+		<div class="text-7xl font-bold mb-8">This is Streamer Ranker</div>
+		<div class="text-3xl font-bold text-gray-500 w-3/4 pb-8">Streamer Ranker is a platform where you can help your favorite small streamers grow their audience. All you have to do is rate, vote, and discover.</div>
+		<Accordion flush class="w-3/4">
+			<AccordionItem>
+				<span slot="header" class="text-4xl font-bold text-black">Rate</span>
+				<p class="text-xl font-bold text-black">Rating means you just find your favorite streamers, and do a quick rating of their stream by filling out our super short survey.</p>
+			</AccordionItem>
+			<AccordionItem>
+				<span slot="header" class="text-4xl font-bold text-black">Vote</span>
+				<p class="text-xl font-bold text-black">Voting is when you look at the ratings of your fellow viewers and chatters, and upvote or downvote them depending on how accurate you believe them to be, this allows us to decide exactly how does an audience feel about a creator. </p>
+			</AccordionItem>
+			<AccordionItem>
+				<span slot="header" class="text-4xl font-bold text-black">Discover</span>
+				<p class="text-xl font-bold text-black">Then we take all of this information, and combine it with analytics and statistics from Twitch, and we give you a list of new small streamers we think you'll enjoy. </p>
+			</AccordionItem>
+		</Accordion>
+	</div>
 </section>
 <section class="explanation-section flex flex-col mx-auto p-12">
 	<div class="flex flex-col mx-auto gap-8 sm:flex-row">
@@ -40,7 +60,6 @@
 	</div>
 	<Button color="purple" class="mx-auto button">Get Ranking!</Button>
 </section>
-
 <section id="email-section" class="flex flex-col text-center bg-gray-300 py-8">
 	<h1 class="text-5xl font-bold">Keep In Touch!</h1>
 	<p>Enter your email, to know when we enter into beta.</p>
