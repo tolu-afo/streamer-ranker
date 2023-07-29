@@ -1,5 +1,5 @@
 <script>
-	import { Button, Card } from 'flowbite-svelte';
+	import { Button, Card, Label, Input } from 'flowbite-svelte';
 	const bannerImg = "images/banner_img_1.jpg";
 </script>
 
@@ -39,6 +39,15 @@
 		</Card>
 	</div>
 	<Button color="purple" class="mx-auto button">Get Ranking!</Button>
+</section>
+
+<section id="email-section" class="flex flex-col text-center bg-gray-300 py-8">
+	<h1 class="text-5xl font-bold">Keep In Touch!</h1>
+	<p>Enter your email, to know when we enter into beta.</p>
+	<div class='mb-6 w-96 mx-auto'>
+		<Label for='default-input' class='block mb-2'></Label>
+		<Input id='default-input' placeholder="smith@example.com" />
+	</div>
 </section>
 
 <style>
