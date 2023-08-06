@@ -1,0 +1,24 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+asgiref = "==3.7.2"
+django = "==4.2.3"
+django-filter = "==23.2"
+djangorestframework = "==3.14.0"
+markdown = "==3.4.3"
+pytz = "==2023.3"
+sqlparse = "==0.4.4"
+drf-spectacular = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.9"
+
+[scripts]
+start = "python3 manage.py runserver"
+migrations = "python3 manage.py makemigrations"
+migrate = "python3 manage.py migrate"
