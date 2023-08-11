@@ -15,19 +15,15 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.contrib.auth.models import User
 from django.urls import path, include
-from rest_framework import routers, serializers, viewsets
+from rest_framework import routers, serializers, viewsets, permissions
 from drf_spectacular.views import SpectacularAPIView, SpectacularRedocView, SpectacularSwaggerView
+from users.views import UserViewSet, UserList, UserDetail, sanity_check, user_list
 
-class UserSerializer(serializers.HyperlinkedModelSerializer):
-    class Meta:
-        model = User
-        fields = ['url', 'username', 'email', 'is_staff']
-
-class UserViewSet(viewsets.ModelViewSet):
-    queryset  = User.objects.all()
-    serializer_class = UserSerializer
+from rest_framework_simplejwt.views import (
+    TokenObtainPairView,
+    TokenRefreshView,
+)
 
 router = routers.DefaultRouter()
 router.register(r'users', UserViewSet)
@@ -36,6 +32,14 @@ router.register(r'users', UserViewSet)
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/v1/', include(router.urls)),
+    path('api/v1/auth/', include('authentication.urls')),   
+    # path('token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
+    # path('token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
+    # path('users/', UserList.as_view()),
+    # path('test/', sanity_check),
+    # path('user/<int:pk>/', UserDetail.as_view()),
+    # path('test/users/', user_list),
+    # path('api/v1/test', UserList.as_view()),
     path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
 
     # YOUR PATTERNS

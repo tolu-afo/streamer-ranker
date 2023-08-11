@@ -94,7 +94,7 @@
 			</Label>
 			<Label class="space-y-2">
 				<span>Confirm Password</span>
-				<Input type="password" name="password" placeholder="•••••" required />
+				<Input type="password" name="confirm_password" placeholder="•••••" required />
 			</Label>
 
 			<Button type="submit" class="w-full1 bg-[#5C17C5] hover:bg-[#5C17C5] hover:brightness-125">Sign up</Button>

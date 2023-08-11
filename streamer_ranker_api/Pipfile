@@ -12,6 +12,7 @@ markdown = "==3.4.3"
 pytz = "==2023.3"
 sqlparse = "==0.4.4"
 drf-spectacular = "*"
+djangorestframework-simplejwt = "*"
 
 [dev-packages]
 
@@ -22,3 +23,4 @@ python_version = "3.9"
 start = "python3 manage.py runserver"
 migrations = "python3 manage.py makemigrations"
 migrate = "python3 manage.py migrate"
+m = "python3 manage.py"
