@@ -43,7 +43,7 @@
 
 	<!-- Main modal -->
 	<Modal bind:open={loginModal} size="xs" autoclose={false} class="w-full">
-		<form class="flex flex-col space-y-2" action="#">
+		<form method="POST" action="?/login" class="flex flex-col space-y-2">
 			<h3 class="mb-0 text-xl font-medium text-gray-900 dark:text-white text-center">Sign in</h3>
 			<hr />
 			<Label class="space-y-2">
@@ -75,7 +75,7 @@
 	</Modal>
 
 	<Modal bind:open={signInModal} size="xs" autoclose={false} class="w-full">
-		<form class="flex flex-col space-y-2" action="#">
+		<form class="flex flex-col space-y-2" method="POST" action="?/register">
 			<h3 class="mb-0 text-xl font-medium text-gray-900 dark:text-white text-center">
 				Create Account
 			</h3>
@@ -85,12 +85,16 @@
 				<Input type="email" name="email" placeholder="name@company.com" required />
 			</Label>
 			<Label class="space-y-2">
+				<span>Username</span>
+				<Input type="text" name="username" placeholder="hunter123" required />
+			</Label>
+			<Label class="space-y-2">
 				<span>Password</span>
 				<Input type="password" name="password" placeholder="•••••" required />
 			</Label>
 			<Label class="space-y-2">
 				<span>Confirm Password</span>
-				<Input type="password" name="password" placeholder="•••••" required />
+				<Input type="password" name="confirm_password" placeholder="•••••" required />
 			</Label>
 
 			<Button type="submit" class="w-full1 bg-[#5C17C5] hover:bg-[#5C17C5] hover:brightness-125">Sign up</Button>
